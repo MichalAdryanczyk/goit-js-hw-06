@@ -21,4 +21,5 @@ const markup = images
   alt = "${image.alt}"
   width = "500"></li>`
 )
+.join("")
 imgGallery.insertAdjacentHTML("beforeend",markup);

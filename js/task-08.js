@@ -8,7 +8,10 @@ const handleSubmit = (event) => {
     if (email.value ==="" || password.value ===""){
         return alert("Please fill in all the fields!!!")
     } 
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
+    const logData = {};
+    logData[email.name] = email.value;
+    logData[password.name] = password.value;
+    console.log(logData)
     event.currentTarget.reset()
     }
     logForm.addEventListener("submit", handleSubmit);
